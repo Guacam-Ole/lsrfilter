@@ -1,0 +1,15 @@
+{
+    "appName":
+            {
+                "message": "Leistungsschutzrecht-Filter"
+            },
+    "appDesc":
+            {
+                "message": "Filtert automatisch Links zu Seiten, die der VG Media angehören "
+            },
+    "lang":
+            {
+                "message": "de"
+            }
+}
+    

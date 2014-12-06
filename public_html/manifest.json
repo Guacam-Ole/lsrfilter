@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "__MSG_appName__",
+    "short_name": "LSR-Filter",
+    "description": "__MSG_appDesc__",
+    "default_locale": "de",
+    "version": "1.0",
+    "author": "Ole Albers",
+    "permissions": [ "storage"],
+    "content_scripts": [{"matches": ["http://*/*","https://*/*"],"js": ["jquery-1.10.2.min.js","lsr.js"]}],
+    "options_page": "lsr.html",    
+    "icons":
+    {
+        "16": "images/lsr16.png",
+        "48": "images/lsr48.png",
+        "128": "images/lsr128.png"
+    },
+   
+    "browser_action": { 
+            "default_icon": "images/lsr128.png", "default_title":"LSR-Filter" 
+        }, 
+        
+        
+    "background":
+    {
+        "scripts": ["jquery-1.10.2.min.js","filter.js"],
+        "persistent": false
+    },
+    "web_accessible_resources": []
+}
+
