@@ -43,7 +43,7 @@ gpoLsr.prototype = {
             Action: "GetLsr"
         }, function (response)
         {
-            obj.DomainBlacklist=response.List;
+            obj.DomainBlackList=response.List;
             obj.WhiteList=response.WhiteList;
             obj.Dom();
         });
@@ -71,7 +71,7 @@ gpoLsr.prototype = {
 
         // Link:
         $('a').each(function(i, a) {
-            obj.DomainBlacklist.forEach(function(domain) {
+            obj.DomainBlackList.forEach(function(domain) {
                 if (a.href.indexOf(domain+"/") > -1 || a.href.substr(-1,1) === domain ) {
                     remove($(a));
                 }

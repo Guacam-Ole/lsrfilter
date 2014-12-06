@@ -4,7 +4,7 @@
     "short_name": "LSR-Filter",
     "description": "__MSG_appDesc__",
     "default_locale": "de",
-    "version": "1.0",
+    "version": "1.0.1",
     "author": "Ole Albers",
     "permissions": [ "storage"],
     "content_scripts": [{"matches": ["http://*/*","https://*/*"],"js": ["jquery-1.10.2.min.js","lsr.js"]}],
